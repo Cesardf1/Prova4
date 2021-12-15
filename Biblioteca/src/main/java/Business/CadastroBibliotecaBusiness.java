@@ -17,7 +17,7 @@ public class CadastroBibliotecaBusiness {
         this.connection = new ConnectionFactory().getConnection();
     }
 
-    BibliotecaModel bibliotecaModel = new BibliotecaModel();
+
 
 
 
@@ -62,7 +62,10 @@ public class CadastroBibliotecaBusiness {
             stmt.setString(1, bibliotecaModel.getNomeBiblioteca());
             stmt.execute();
 
-            stmt.close();
+            System.out.println("Alteração feita com sucesso");
+            String mensagem = String.format("'%s' foi adicionada  a tabela",bibliotecaModel.getNomeBiblioteca());
+            System.out.println(mensagem);
+            System.out.println("\n");
 
 
         }

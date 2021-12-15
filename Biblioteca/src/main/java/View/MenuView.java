@@ -61,7 +61,7 @@ public class MenuView {
                     System.out.println("Opcao invalida");
                     break;
             }
-        } while (option.equals("8"));
+        } while (!option.equals("8"));
     }
 
     /*public static void logIn(String tpLogin) throws IOException {
